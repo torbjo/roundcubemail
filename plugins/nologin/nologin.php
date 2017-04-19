@@ -23,7 +23,6 @@ class nologin extends rcube_plugin
         // Q: only add hook if nologin is true?
         // Q: is init() always called before hook_authenticate?
         $this->nologin = file_exists (NOLOGIN_FILE);
-        $this->nologin = true;
     }
 
     //function hook_authenticate ($host, $user, $pass, $cookiecheck, $valid)
